@@ -7,7 +7,7 @@ class Artist < ActiveRecord::Base
   end
 
   def get_genre_of_first_song
-    get_first_song.genre_id
+    get_first_song.genre.name
     binding.pry
   end
 
