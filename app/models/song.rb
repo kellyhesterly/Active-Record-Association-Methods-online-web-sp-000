@@ -10,7 +10,7 @@ class Song < ActiveRecord::Base
     drake = Artist.new(name: "Drake")
 
     if self.artist != drake
-      self.artist = drake
+      self.artist = drake.uniq
       binding.pry
 
     # when this method is called it should assign the song's artist to Drake
