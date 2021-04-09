@@ -4,8 +4,6 @@ class Genre < ActiveRecord::Base
 
   def song_count
     self.songs.count
-    binding.pry
-    # return the number of songs in a genre
   end
 
   def artist_count
